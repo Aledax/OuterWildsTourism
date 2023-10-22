@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+/* Background */
+body {
+    background-image: url("https://thefulldomeblog.files.wordpress.com/2013/06/cropped-starglobe-maya-render.jpg?w=1024");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* ---CONTAINERS--- */
+
+/* Menu */
+div.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: rgba(0,0,0,0.95);
+    border-bottom: 1px solid rgb(58, 61, 87)
+}
+
+/* Logo and title */
+div.header {
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    padding: 50px;
+    margin: 30px 0px 0px -480px;
+}
+div.header div {
+    float: left;
+}
+
+/* Body sections */
+div.section {
+    width: 700px;
+    position: relative;
+    left: 50%;
+    padding: 20px 40px;
+    margin: 10px 0px 50px -390px;
+    
+    background-color: rgba(11,12,14,.75);
+    border: 3px solid rgba(34,37,42,.75);
+    border-radius: 6px;
+}
+div.section.topmost { /* Topmost section */
+    margin-top: 70px;
+}
+div.section div.row { /* Horizontal container */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div.section div.text_column {
+    width: 1250px;
+}
+div.section div.img_column {
+    margin-right: 35px;
+}
+div.section div.img_grid {
+    margin-top: 50px;
+}
+
+
+/* ---ELEMENTS--- */
+
+/* All text */
+* {
+    font-family: 'Red Hat Display';
+    color: #d9e1f2;
+    text-decoration: none;
+}
+
+/* Links */
+a {
+    text-align: center;
+    background-color: rgba(21, 25, 35, 1);
+    border-radius: 2px;
+}
+.menu a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+    width: 75px;
+    padding: 5px 15px 5px 15px;
+    margin: 15px 10px;
+}
+.section a {
+    font-size: 18px;
+    letter-spacing: 3px;
+
+    width: 500px;
+    padding: 10px 100px;
+    margin: 20px 0px;
+
+    display: flex;
+    justify-content: center;
+}
+a:hover {
+    background-color: rgb(37, 45, 63);
+    color: white;
+}
+
+/* Regular Text */
+.header h1 {
+    font-size: 72px;
+    float: left;
+    padding-left: 10px;
+}
+.section h1 {
+    font-size: 24;
+    letter-spacing: 1px;
+    text-align: left
+}
+.section h2 {
+    font-size: 18;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.section p {
+    font-size: 13;
+    letter-spacing: 1px;
+    line-height: 23px;
+    text-align: justify;
+}
+.section p.topmost {
+    margin-top: 30px;
+}
+.section p.caption {
+    text-align: center;
+}
+
+/* Images */
+.header img {
+    margin-top: 25px;
+}
+.section img {
+    border: 2px solid #d9e1f2;
+    border-radius: 3px;
+    width: 100%;
+}
+.section img.column_img {
+    margin: 30px;
+}
+.section img.grid_img {
+    border: 2px solid #d9e1f2;
+    border-radius: 3px;
+    width: 325px;
+}
+
+/* Horizontal Rules */
+.section hr {
+    margin-bottom: 20px;
+}
+.section hr.middle {
+    margin-top: 35px;
+}
